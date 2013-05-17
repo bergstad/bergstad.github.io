@@ -1,10 +1,10 @@
-/* =============================================================================
+@charset "UTF-8";
 
-	davidkenny.me
-	Author: David Kenny
-	Last update: 07.07.2012
-
-   ========================================================================== */
+* {
+    margin:0;
+    padding:0;
+    border:0;
+}
 
 /* =============================================================================
    Page load animation
@@ -28,18 +28,18 @@
    Set up
    ========================================================================== */
 
-html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;background: url(../images/me-blur.jpg) no-repeat center center fixed; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;font-family: sans-serif;}
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;/*background: url(../images/me-blur.jpg)*/background:#FAFAFA; no-repeat center center fixed; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;font-family: sans-serif;}
 html, body {height: 100%;margin:0;}
-body { margin: 0; font-size: 1em; line-height: 1.5em; font-family: "rooney-web", Georgia, serif;color: #fff;}
-::-moz-selection { background: #e16633; color: #fff; text-shadow: none; }
-::selection { background: #e16633; color: #fff; text-shadow: none; }
+body { margin: 0; font-size: 1em; line-height: 1.5em; font-family: "Garamond", Georgia, serif;color: #33333;}
+::-moz-selection { background: #333333; color: #333333; }
+::selection { background: #333333; color: #fff;}
 
 /* =============================================================================
    Layout
    ========================================================================== */
 
 .wrap	{max-width:728px;margin:0 auto;padding: 48px;}
-header	{text-align: center;width:100%;margin:0 auto;}
+header	{text-align: center;width:100%;margin:0 auto; text-transform:uppercase;}
 .logo	{width:100%; height:49px;margin:0;}
 .logo span	{display:block;width:49px; margin:0 auto;}
 #main	{width:100%;margin:0 auto 6%;}
@@ -51,30 +51,34 @@ footer	{width:100%;margin:0 auto ;}
    Links
    ========================================================================== */
 
-a { color: #fff;font-weight: bold;text-decoration: none;border-bottom: 1px solid #fff;-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out; }
-a:visited { color: #fff; }
-a:hover { color: #000;background:#fff;text-decoration: none; }
+a { color: #333333;font-weight: bold;text-decoration: none;border-bottom: 1px solid #333333;-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out; }
+a:visited { color: #333333; }
+a:hover { color: #cc1177;text-decoration: none; }
 a:focus { outline: thin dotted; }
 a:hover, a:active { outline: 0; }
 a img {border: none;vertical-align: bottom;}
-.email-link	{position: absolute; right: 1.5%;top:0;}
+/*.email-link	{position: absolute; right: 1.5%;top:0;}
 .email-link span {position:relative;display: block;}
-.email-link span a span	{display: none;}
-.email-link span:before,.email-link span:after {content:"";position:absolute;z-index:-1;bottom:28%;left:1%;width:49%;height:30%;max-width:100%;-webkit-box-shadow:0 10px 5px rgba(0, 0, 0, .7);-moz-box-shadow:0 10px 5px rgba(0, 0, 0, .7);box-shadow:0 15px 10px rgba(0, 0, 0, .7);-webkit-transform:rotate(-4deg);-moz-transform:rotate(-4deg);-o-transform:rotate(-4deg);transform:rotate(-4deg);}
-.email-link span:after{right:1%;left:auto;-webkit-transform:rotate(4deg);-moz-transform:rotate(4deg);-o-transform:rotate(4deg);transform:rotate(4deg);}
-a.button-email	{color:#fff;background: #000;display: block;padding:12px 24px;border-bottom: none;text-shadow: 0 1px #000;}
-a.button-email:hover	{color:#000;background: #fff;text-shadow: none;}
+.email-link span a span	{display: none;}*/
+/*.email-link span:before,.email-link span:after {content:"";position:absolute;z-index:-1;bottom:28%;left:1%;width:49%;height:30%;max-width:100%;-webkit-transform:rotate(-4deg);-moz-transform:rotate(-4deg);-o-transform:rotate(-4deg);transform:rotate(-4deg);}*/
+/*.email-link span:after{right:1%;left:auto;-webkit-transform:rotate(4deg);-moz-transform:rotate(4deg);-o-transform:rotate(4deg);transform:rotate(4deg);}*/
+a.button-email	{display: block; clear:both;}
 ul, li	{margin: 0;padding: 0;list-style: none;}
 .external-links	{width:448px;height:88px;margin:0 auto;}
-.button-behance, .button-twitter, .button-linkedin, .button-dribbble	{display: block;width:88px;height:88px;float: left;border-bottom: none;text-indent: -9999px;margin: 0 12px;}
-.button-twitter	{background:url(../images/button-twitter.png) no-repeat center center;}
-.button-linkedin	{background:url(../images/button-linkedin.png) no-repeat center center;}
-.button-behance	{background:url(../images/button-behance.png) no-repeat center center;}
-.button-dribbble	{background:url(../images/button-dribbble.png) no-repeat center center;}
-.button-twitter:hover	{background:url(../images/button-twitter.png) no-repeat center center;opacity: 0.5;}
-.button-behance:hover	{background:url(../images/button-behance.png) no-repeat center center; opacity: 0.5;}
-.button-linkedin:hover	{background:url(../images/button-linkedin.png) no-repeat center center;opacity: 0.5;}
-.button-dribbble:hover	{background:url(../images/button-dribbble.png) no-repeat center center;opacity: 0.5;}
+.button-behance, .button-dribble, .button-twitter, .button-linkedin, .button-illinois, .button-facebook, .button-flickr	{display: block;width:88px;height:88px;float: left;border-bottom: none;text-indent: -9999px;margin: 0 12px;}
+.button-twitter	 {background:url(../images/twitter.png) no-repeat center center;}
+.button-facebook	 {background:url(../images/facebook.png) no-repeat center center;}
+.button-illinois {background:url(../images/Illinois.png) no-repeat center center;}
+.button-flickr	 {background:url(../images/flickr.png) no-repeat center center;}
+.button-linkedin {background:url(../images/linkedin.png) no-repeat center center;}
+.button-twitter:hover	{background:url(../images/twitter.png) no-repeat center center;opacity: 0.5;}
+.button-facebook:hover	{background:url(../images/facebook.png) no-repeat center center;opacity: 0.5;}
+.button-illinois:hover	{background:url(../images/I
+llinois.png) no-repeat center center;opacity: 0.5;}
+.button-flickr:hover	{background:url(../images/flickr.png) no-repeat center center;opacity: 0.5;}
+.button-linkedin:hover	{background:url(../images/linkedin.png) no-repeat center center;opacity: 0.5;}
+
+
 
 /* =============================================================================
    Typography
@@ -82,8 +86,8 @@ ul, li	{margin: 0;padding: 0;list-style: none;}
 
 small { font-size: 0.85em;line-height:1.5em; }
 p	{font-size:1.1em /*16px*/;line-height:1.5em /*24px*/;margin:0 0 1.5em /*24px*/;}
-h1,h2 {color:#fff;margin: 0 0 10px;padding:0;text-transform: uppercase;text-align:center;}
-h1 {font-size: 5.25em;line-height:1em;padding:24px 0;margin: 0 auto;font-family:"brandon-grotesque", Helvetica, Arial, sans-serif;}
+h1,h2 {color:#333333;margin: 0 0 10px;padding:0;text-transform: uppercase;text-align:center;}
+h1 {font-size: 3em;line-height:1em;padding:24px 0;margin: 0 auto;font-family:Garamond, Georgia; serif;}
 h2 {font-size: 1.5em;line-height:1em;padding:0;margin:0 0 8%;display: table;}
 h2 > span, h2:before, h2:after {display: table-cell;}
 h2:before, h2:after {background: url(../images/divider.png) repeat-x center;width: 50%;content: ' ';}
@@ -131,43 +135,29 @@ html.lt-ie8	{background-color:#fff;background-image:none;}
 }
 
 /* =============================================================================
-   Chrome Frame prompt for IE6 and older
-   ========================================================================== */
-
-p.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0;}
-p.chromeframe a	{color:black;border-bottom:none;}
-p.chromeframe a:hover	{color:white;background:black;border-bottom:none;}
-
-/* =============================================================================
    Media queries (Smartphones only)
    ========================================================================== */
 
 @media only screen
-and (max-width : 480px) {
+and (max-width : 450px) {
 	html	{background:#dfdfdf;}
-	body	{color:#494f5b;padding:4%;}
-	a	{color:#555; border-bottom:1px solid #555;}
-	a:hover	{color:#fff !important; background:#e16633;border-bottom:none;}
-	.wrap	{max-width:480px;margin:0 auto;padding:0;background:#fff;}
-	header	{background: url(../images/me-blur-small.jpg) no-repeat center center; border-bottom:4px solid #494f5b;margin:0 0 4%;padding:0 0 4%;}
-	.logo	{width:100%;background:#fff url(../images/logo-dark.png) no-repeat center center;background-size: 10%;padding:0;margin:0;}
+	body	{color:#333333;}
+	a	{color:#333333; border-bottom:1px solid #333333;}
+	a:hover	{color:#cc1177 !important; border-bottom:none;}
+	.wrap	{max-width:550px;margin:0 auto;padding:0;background:#fff;}
+	header	{border-bottom:1px solid #333333;margin:0 0 4%;}
+	.logo	{width:100%;background:#fff url(../images/logo-dark.png) no-repeat center center;background-size: 10%;padding:4% 0;margin:0;}
 	.logo span	{display: none;}
-	div#main p	{width:92%;float:none;margin: 0 auto;}
+	div#main p	{width:87%;float:none;margin: 0 auto;}
 	div#main p.about	{margin: 0 auto 4%;}
-	h1 {font-size: 2.5em;line-height:1em;padding:18% 0 2%;margin: 0 auto;font-family:"brandon-grotesque", Helvetica, Arial, sans-serif;text-shadow: 0 1px #000;}
-	h2 {font-size: 1em;line-height:1em;padding:0;margin:0 0 18%;text-align: center;display: table;text-shadow: 0 1px #000;}
+	h1 {font-size: 2.5em;line-height:1em;padding:6% 0 2%;margin: 0 auto;font-family:"Garamond", Georgia, serif;}
+	h2 {font-size: 1em;line-height:1em;padding:0;margin:0 0 6%;text-align: center;display: table;}
 	h2 span span	{padding: 0 6px;}
 	h2:before, h2:after {background: none;}
-	.email-link	{position:static; margin: 0 auto;width:100%;text-align: center;}
-	.email-link span a span	{display: inline;position:absolute;right:7%;}
-	.email-link span:before,.email-link span:after {display: none;}
-	a.button-email	{width:88%;color:#555 !important;background:#fff;display: block;padding:6% 6%;border-top: 1px solid #dfdfdf;border-bottom: 1px solid #dfdfdf;text-shadow: none;text-align:left;}
-	a.button-email:hover	{color:#fff !important;background: #e16633;text-shadow: none;}
-	.button-email.ss-mail:before {display:none;}
 	footer	{text-align: left;}
 	.external-links	{width:100%;height:auto;margin:0 auto;}
-	.button-twitter, .button-linkedin, .button-behance, .button-dribbble	{width:88%;height:auto;background-image:none;display: block;float: none;border-bottom: 1px solid #dfdfdf;margin: 0;text-indent: 0;padding:6% 6%;color:#555;}
-	.button-twitter span, .button-linkedin span, .button-behance span, .button-dribbble span	{position:absolute;right:10%;}
-	.button-twitter:hover, .button-behance:hover, .button-linkedin:hover, .button-dribbble:hover	{background:#e16633 !important;color:#fff !important;background-image:none;opacity: 1;border-bottom: 1px solid #dfdfdf}
-		div[role=main] p a:visited, .button-twitter:visited, .button-behance:visited, .button-linkedin:visited, .button-dribbble:visited	{color:#555;}
+	.button-twitter, .button-linkedin, .button-behance, .button-dribbble, .button-facebook, .button-illinois, .button-flickr, .button-email	{width:88%;height:auto;background-image:none;display: block;float: none;border-bottom: 1px solid #dfdfdf;margin: 0;text-indent: 0;padding:6% 6%;color:#333333;}
+	.button-twitter span, .button-linkedin span, .button-behance span, .button-dribbble span, .button-facebook span, .button-illinois span, .button-flickr span, .button-email span	{position:absolute;right:10%;}
+	.button-twitter:hover, .button-behance:hover, .button-linkedin:hover, .button-dribbble:hover, .button-facebook:hover, .button-illinois:hover, .button-flickr:hover, .button-email:hover	{background:#ffffff !important;color:#cc1177 !important;background-image:none;opacity: 1;border-bottom: 1px solid #dfdfdf}
+
 }
