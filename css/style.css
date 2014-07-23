@@ -139,6 +139,11 @@ html.lt-ie8	{background-color:#fff;background-image:none;}
    Media queries (Smartphones only)
    ========================================================================== */
 @media only screen
+and (max-width : 815px) {
+    div#main p.about, div#main p { float:none; margin-left: auto; margin-right:auto; margin-bottom:4%; max-width:440px;width:100%}
+}
+
+@media only screen
 and (max-width : 715px) {
          .external-links {width: 370px;}
 }
@@ -154,7 +159,7 @@ and (max-width : 450px) {
 	.logo	{width:100%;background:#fff url(../images/logo-dark.png) no-repeat center center;background-size: 10%;padding:4% 0;margin:0;}
 	.logo span	{display: none;}
 	div#main p	{width:87%;float:none;margin: 0 auto;}
-	div#main p.about	{margin: 0 auto 4%;}
+	div#main p.about	{width:87%; margin: 0 auto 4%;}
 	h1 {font-size: 2.5em;line-height:1em;padding:6% 4% 2%;margin: 0 auto;font-family:"Garamond", Georgia, serif;}
 	h2 {font-size: 1em;line-height:1em;padding:0;margin:0 0 6%;text-align: center;display: table;}
 	h2 span span	{padding: 0 6px;}
