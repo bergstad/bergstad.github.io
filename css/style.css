@@ -77,10 +77,10 @@ ul, li	{margin: 10px 0;padding: 0;list-style: none; display:inline-block;}
 .button-illinois {background:url(../images/Illinois.png) no-repeat center center;}
 .button-flickr	 {background:url(../images/flickr.png) no-repeat center center;}
 .button-linkedin {background:url(../images/linkedin.png) no-repeat center center; }
-.button-twitter:hover	{background:url(../images/twitter.png) no-repeat center center;}
-.button-facebook:hover	{background:url(../images/facebook.png) no-repeat center center;}
-.button-illinois:hover	{background:url(../images/Illinois.png) no-repeat center center;}
-.button-flickr:hover	{background:url(../images/flickr.png) no-repeat center center;}
+.button-twitter:hover	{background:url(../images/twitter-pink.png) no-repeat center center;}
+.button-facebook:hover	{background:url(../images/facebook-pink.png) no-repeat center center;}
+.button-illinois:hover	{background:url(../images/Illinois-pink.png) no-repeat center center;}
+.button-flickr:hover	{background:url(../images/flickr-pink.png) no-repeat center center;}
 .button-linkedin:hover	{background:url(../images/linkedin-pink.png) no-repeat center center; -webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
 
 
