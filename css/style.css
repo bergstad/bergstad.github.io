@@ -71,10 +71,10 @@ a.footer-email	{display: block;text-align:center; border-bottom:none;clear:left;
 li.footer-email { width:100%; }
 ul, li	{margin: 10px 0;padding: 0;list-style: none; display:inline-block;}
 .external-links	{width:100%;height:88px;margin:0 auto;text-align:center;}
-.button-behance, .button-dribble, .button-twitter, .button-linkedin, .button-illinois, .button-facebook, .button-flickr, .button-email	{display:inline-block;min-width:100px;width:120px;height:88px;border-bottom: none;/*text-indent: -9999px*/margin: 0;text-align:center;text-transform:uppercase;}
+.button-behance, .button-dribble, .button-twitter, .button-linkedin, .button-illinois, .button-facebook, .button-flickr, .button-email	{display:inline-block;min-width:100px;width:120px;height:88px;border-bottom: none;/*text-indent: -9999px*/margin: 0;text-align:center;text-transform:uppercase; background:url(../images/socialsprites.png) no-repeat;}
 .button-twitter span, .button-linkedin span, .button-behance span, .button-dribbble span, .button-facebook span, .button-illinois span, .button-flickr span, .button-email	{display:none;}
 .button-twitter	 {background:url(../images/twitter.png) no-repeat center center;}
-.button-facebook	 {background:url(../images/facebook.png) no-repeat center center;}
+.button-facebook {background:url(../images/facebook.png) no-repeat center center;}
 .button-illinois {background:url(../images/Illinois.png) no-repeat center center;}
 .button-flickr	 {background:url(../images/flickr.png) no-repeat center center;}
 .button-linkedin {background:url(../images/linkedin.png) no-repeat center center; }
@@ -146,7 +146,7 @@ and (max-width : 815px) {
 
 @media only screen
 and (max-width : 715px) {
-         .external-links {width: 370px;}
+         .external-links {width: 300px;}
 }
 
 @media only screen
